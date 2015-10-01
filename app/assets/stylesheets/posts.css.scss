@@ -8,6 +8,7 @@
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
+
 body {
   background: #111;
   background-color: #111; }
@@ -189,12 +190,27 @@ body {
   text-decoration: none;
   -webkit-transition: color 0.15s ease;
   -moz-transition: color 0.15s ease;
-  transition: color 0.15s ease; }
+  transition: color 0.15s ease; 
+  display: inline-block;
+    border: 2px solid white;
+    padding: 12px 17px;
+    width: 150px;
+    text-align: center;
+
+}
 
 .reveal a:hover {
-  color: #f3d7ac;
+  // color: #f3d7ac;
   text-shadow: none;
-  border: none; }
+  // border: none; 
+  display: inline-block;
+    border: 1px solid white;
+    color: white;
+    padding: 12px 17px;
+    width: 150px;
+    text-align: center;
+  
+}
 
 .reveal .roll span:after {
   color: #fff;
