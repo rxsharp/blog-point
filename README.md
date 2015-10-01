@@ -1,5 +1,5 @@
 # blogPoint
-A simple rails blog in a presentation format using react.js
+A simple rails blog in a presentation format using reveal.js
 
 ## Deployment
 OpenShift
