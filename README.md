@@ -2,4 +2,8 @@
 A simple rails blog in a presentation format using reveal.js
 
 ## Deployment
-OpenShift
+- OpenShift
+
+# Development and Deployment
+- Unicorn
+- Postgre
