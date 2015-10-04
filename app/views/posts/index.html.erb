@@ -1,38 +1,28 @@
 <div class="reveal">
   <div class="slides">
-    <section>
+<section>
 <h1>BlogPoint</h1>
 <small>A blog with a presentation style makeover</small>
 <p>Scroll of swipe right to see a list of blogs</p>
 <%= link_to 'New Blog', new_post_path, :class =>"btn-wb" %>
-    </section>
-    <section>
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Body</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+</section>
 
-  <tbody>
+<section>
     <% @posts.each do |post| %>
-      <tr>
-        <td><%= post.title %></td>
-        <td><%= post.body %></td>
-        <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+      <section>
+        <h2><%= post.title %></h2>
+        <preview><%= post.body %></preview>
+      <div class="fx-btr">
+        <ul>
+        <li><%= link_to 'Show', post %></li>
+        <li><%= link_to 'Edit', edit_post_path(post) %></li>
+        <li><%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+        </ul>
+      </div>
+      </section>
     <% end %>
-  </tbody>
-</table>
 
-<br>
 
-<%= link_to 'New Post', new_post_path %>
-      
     </section>
   </div>
 </div>

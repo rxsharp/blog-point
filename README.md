@@ -6,4 +6,4 @@ A simple rails blog in a presentation format using reveal.js
 
 # Development and Deployment
 - Unicorn
-- Postgre
+- PostgreSQL
