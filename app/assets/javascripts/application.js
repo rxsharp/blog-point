@@ -10,6 +10,7 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require cocoon
 //= require reveal
 //= require jquery
 //= require jquery_ujs
