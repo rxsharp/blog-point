@@ -2,8 +2,9 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.input :title %>
-    <%= f.input :body %>
+    <%= f.input :title, placeholder: 'Title of blog' %>
+    <%= f.input :summary, placeholder: 'Write a summary of the blog entry (optional)' %>
+    <%= f.input :body, placeholder: 'Body of blog' %>
   </div>
 
   <div class="form-actions">
