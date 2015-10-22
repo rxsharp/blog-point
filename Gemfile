@@ -15,7 +15,6 @@ gem 'bootstrap-sass'
 gem 'devise'
 gem 'devise_invitable'
 gem 'high_voltage'
-gem 'pg'
 gem 'pundit'
 gem 'simple_form'
 gem 'unicorn'
@@ -58,6 +57,11 @@ group :test do
   gem 'database_cleaner'
   gem 'launchy'
   gem 'selenium-webdriver'
+end
+
+group :production do
+  gem 'pg'
+gem 'puma', '~> 2.14'
 end
 
 # Additional Gems
