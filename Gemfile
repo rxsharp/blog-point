@@ -69,5 +69,5 @@ end
 gem 'pg' #Used for both development and production
 
 # Additional Gems
-gem 'rails-reveal-js', github: "negativetwelve/rails-reveal-js", branch: "master"
+gem 'rails-reveal-js', :github => "negativetwelve/rails-reveal-js", :branch=> "master"
 gem "cocoon"
