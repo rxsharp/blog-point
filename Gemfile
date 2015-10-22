@@ -8,8 +8,10 @@ gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 # gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
-gem 'sdoc', '~> 0.4.0',          group: :doc
-gem 'spring',        group: :development
+
+group :doc do
+gem 'sdoc', '~> 0.4.0'
+end
 
 gem 'bootstrap-sass'
 gem 'devise'
@@ -42,6 +44,7 @@ group :development do
   gem 'rb-fsevent', :require=>false
   gem 'rb-inotify', :require=>false
   gem 'spring-commands-rspec'
+  gem 'spring'
 end
 
 group :development, :test do
@@ -60,9 +63,10 @@ group :test do
 end
 
 group :production do
-  gem 'pg'
 gem 'puma', '~> 2.14'
 end
+
+gem 'pg' #Used for both development and production
 
 # Additional Gems
 gem 'rails-reveal-js', github: "negativetwelve/rails-reveal-js", branch: "master"
