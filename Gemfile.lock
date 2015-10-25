@@ -184,6 +184,9 @@ GEM
       nenv (~> 0.1)
       shellany (~> 0.0)
     orm_adapter (0.5.0)
+    passenger (5.0.21)
+      rack
+      rake (>= 0.8.1)
     pg (0.18.3)
     polyamorous (1.2.0)
       activerecord (>= 3.0)
@@ -362,6 +365,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   launchy
+  passenger
   pg
   pry-rails
   pry-rescue
