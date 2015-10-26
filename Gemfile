@@ -70,6 +70,6 @@ end
 
 
 # Additional Gems
-gem 'rails-reveal-js', :github => "negativetwelve/rails-reveal-js", :branch=> "master"
+# gem 'rails-reveal-js', :github => "negativetwelve/rails-reveal-js", :branch=> "master"
 gem "cocoon"
 gem "passenger"
