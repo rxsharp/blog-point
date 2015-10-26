@@ -11,7 +11,6 @@
 // about supported directives.
 //
 //= require cocoon
-//= require reveal
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
