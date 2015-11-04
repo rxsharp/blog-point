@@ -66,6 +66,7 @@ end
 group :production do
 gem 'puma', '~> 2.14'
 gem 'pg' #Use for production
+gem 'rails_12factor'
 end
 
 
