@@ -1,0 +1,619 @@
+.new-post-container {
+  padding-top:10px;
+  padding-bottom:40px;
+  background-color: rgba(55, 107, 99, 0.7); 
+  color: white;
+  width: 100%;
+  text-align:center;
+}
+
+.new-post-container h1 {margin-top:52px;}
+
+.new-post-container a {
+    color: #e7ad52;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid white;
+    padding: 6px 2px;
+    width: 150px;
+    text-align: center;
+
+}
+
+.new-post-container .btn {
+    position: fixed;
+    top:0;
+    right:20px;
+    color: #fff;
+    font-size: 1.5em;
+    background-color: rgba(55, 107, 99, 1); 
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid white;
+    padding: 12px 12px;
+    width: 150px;
+    text-align: center;
+}
+
+.back-tl {
+  position: fixed;
+  top:0;
+  left:0;
+  background-color: rgba(55, 107, 99, 1); 
+
+}
+
+input {
+  width:50%;
+  border: 3px solid black;
+  font-size: 2em;
+
+}
+
+textarea {
+  width: 50%;
+  height: 250px;
+  font-size: 1.5em;
+  border: 3px solid black;
+  margin-top:40px;
+  margin-bottom:10px;
+}
+
+label {display:none;}
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
+/**
+ * Black theme for reveal.js.
+ *
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+/* line 11, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.fx-btr {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  margin: 0px;
+}
+
+/* line 18, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.fx-btr ul {
+  margin: 0px;
+}
+
+/* line 21, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.fx-btr li {
+  list-style-type: none;
+}
+
+/* line 25, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal preview {
+  display: inline-block;
+  font-size: 0.6em;
+  line-height: 1.2em;
+  vertical-align: top;
+  width: 80%;
+  float: right;
+  text-align: left;
+  margin-right: -18px;
+}
+
+/* line 36, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal preview * {
+  vertical-align: top;
+}
+
+/* line 40, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+body {
+  background: #111;
+  background-color: #111;
+  color: #ffF;
+}
+
+/* line 45, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+  color: #eee;
+}
+
+/* line 51, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+::selection {
+  color: #fff;
+  background: #e7ad52;
+  text-shadow: none;
+}
+
+/* line 56, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal .slides > section, .reveal .slides > section > section {
+  line-height: 1.3;
+  font-weight: inherit;
+}
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+/* line 63, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+  margin: 0 0 20px 0;
+  color: #eee;
+  font-family: 'Montserrat', Impact, sans-serif;
+  font-weight: normal;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: none;
+  text-shadow: none;
+  word-wrap: break-word;
+}
+
+/* line 74, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal h1 {
+  font-size: 3.77em;
+}
+
+/* line 77, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal h2 {
+  font-size: 2.11em;
+  float: right;
+  width: 80%;
+}
+
+/* line 80, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal h3 {
+  font-size: 1.55em;
+}
+
+/* line 83, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal h4 {
+  font-size: 1em;
+}
+
+/* line 86, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal h1 {
+  text-shadow: none;
+}
+
+/*********************************************
+ * OTHER
+ *********************************************/
+/* line 92, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal p {
+  margin: 20px 0;
+  line-height: 1.3;
+}
+
+/* Ensure certain elements are never larger than the slide itself */
+/* line 97, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal img, .reveal video, .reveal iframe {
+  max-width: 95%;
+  max-height: 95%;
+}
+
+/* line 101, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal strong, .reveal b {
+  font-weight: bold;
+}
+
+/* line 104, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal em {
+  font-style: italic;
+}
+
+/* line 107, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal ol, .reveal dl, .reveal ul {
+  display: inline-block;
+  text-align: left;
+  margin: 0px;
+}
+
+/* line 112, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal ol {
+  list-style-type: decimal;
+}
+
+/* line 115, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal ul {
+  list-style-type: disc;
+}
+
+/* line 118, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal ul ul {
+  list-style-type: square;
+}
+
+/* line 121, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal ul ul ul {
+  list-style-type: circle;
+}
+
+/* line 124, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal ul ul, .reveal ul ol, .reveal ol ol, .reveal ol ul {
+  display: block;
+  margin-left: 40px;
+}
+
+/* line 128, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal dt {
+  font-weight: bold;
+}
+
+/* line 131, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal dd {
+  margin-left: 40px;
+}
+
+/* line 134, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal q, .reveal blockquote {
+  quotes: none;
+}
+
+/* line 137, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal blockquote {
+  display: block;
+  position: relative;
+  width: 70%;
+  margin: 20px auto;
+  padding: 5px;
+  font-style: italic;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* line 147, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal blockquote p:first-child, .reveal blockquote p:last-child {
+  display: inline-block;
+}
+
+/* line 150, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal q {
+  font-style: italic;
+}
+
+/* line 153, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal pre {
+  display: block;
+  position: relative;
+  width: 90%;
+  margin: 20px auto;
+  text-align: left;
+  font-size: 0.55em;
+  font-family: monospace;
+  line-height: 1.2em;
+  word-wrap: break-word;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* line 165, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal code {
+  font-family: monospace;
+}
+
+/* line 168, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal pre code {
+  display: block;
+  padding: 5px;
+  overflow: auto;
+  max-height: 400px;
+  word-wrap: normal;
+  background: #3F3F3F;
+  color: #DCDCDC;
+}
+
+/* line 177, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal table {
+  margin: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 182, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal table th {
+  font-weight: bold;
+}
+
+/* line 185, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal table th, .reveal table td {
+  text-align: left;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  border-bottom: 1px solid;
+}
+
+/* line 190, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal table th[align="center"], .reveal table td[align="center"] {
+  text-align: center;
+}
+
+/* line 193, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal table th[align="right"], .reveal table td[align="right"] {
+  text-align: right;
+}
+
+/* line 196, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal table tr:last-child td {
+  border-bottom: none;
+}
+
+/* line 199, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal sup {
+  vertical-align: super;
+}
+
+/* line 202, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal sub {
+  vertical-align: sub;
+}
+
+/* line 205, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal small {
+  display: inline-block;
+  font-size: 0.6em;
+  line-height: 1.2em;
+  vertical-align: top;
+}
+
+/* line 211, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal small * {
+  vertical-align: top;
+}
+
+/*********************************************
+ * LINKS
+ *********************************************/
+/* line 217, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal a {
+  color: #e7ad52;
+  text-decoration: none;
+  -webkit-transition: color 0.15s ease;
+  -moz-transition: color 0.15s ease;
+  transition: color 0.15s ease;
+  display: inline-block;
+  border: 2px solid white;
+  padding: 12px 17px;
+  width: 150px;
+  text-align: center;
+}
+
+/* line 231, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal a:hover {
+  text-shadow: none;
+  display: inline-block;
+  border: 1px solid white;
+  color: white;
+  padding: 12px 17px;
+  width: 150px;
+  text-align: center;
+}
+
+/* line 244, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal .roll span:after {
+  color: #fff;
+  background: #d0881d;
+}
+
+/*********************************************
+ * IMAGES
+ *********************************************/
+/* line 251, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal section img {
+  margin: 15px 0px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 4px solid #eee;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+/* line 257, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal a img {
+  -webkit-transition: all 0.15s linear;
+  -moz-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+
+/* line 262, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal a:hover img {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #e7ad52;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
+}
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+/* line 270, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal .controls div.navigate-left, .reveal .controls div.navigate-left.enabled {
+  border-right-color: #e7ad52;
+}
+
+/* line 273, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal .controls div.navigate-right, .reveal .controls div.navigate-right.enabled {
+  border-left-color: #e7ad52;
+}
+
+/* line 276, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal .controls div.navigate-up, .reveal .controls div.navigate-up.enabled {
+  border-bottom-color: #e7ad52;
+}
+
+/* line 279, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal .controls div.navigate-down, .reveal .controls div.navigate-down.enabled {
+  border-top-color: #e7ad52;
+}
+
+/* line 282, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal .controls div.navigate-left.enabled:hover {
+  border-right-color: #f3d7ac;
+}
+
+/* line 285, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal .controls div.navigate-right.enabled:hover {
+  border-left-color: #f3d7ac;
+}
+
+/* line 288, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal .controls div.navigate-up.enabled:hover {
+  border-bottom-color: #f3d7ac;
+}
+
+/* line 291, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal .controls div.navigate-down.enabled:hover {
+  border-top-color: #f3d7ac;
+}
+
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+/* line 297, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal .progress {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* line 300, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal .progress span {
+  background: #e7ad52;
+  -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+}
+
+/*********************************************
+ * SLIDE NUMBER
+ *********************************************/
+/* line 309, /home/ubuntu/workspace/blog-point/app/assets/stylesheets/posts.css.scss */
+.reveal .slide-number {
+  color: #e7ad52;
+}
+/*
+
+Zenburn style from voldmar.ru (c) Vladimir Epifanov <voldmar@voldmar.ru>
+based on dark.css by Ivan Sagalaev
+
+*/
+
+
+.hljs {
+  display: block; padding: 0.5em;
+  background: #3F3F3F;
+  color: #DCDCDC;
+}
+
+.hljs-keyword,
+.hljs-tag,
+.css .hljs-class,
+.css .hljs-id,
+.lisp .hljs-title,
+.nginx .hljs-title,
+.hljs-request,
+.hljs-status,
+.clojure .hljs-attribute {
+  color: #E3CEAB;
+}
+
+.django .hljs-template_tag,
+.django .hljs-variable,
+.django .hljs-filter .hljs-argument {
+  color: #DCDCDC;
+}
+
+.hljs-number,
+.hljs-date {
+  color: #8CD0D3;
+}
+
+.dos .hljs-envvar,
+.dos .hljs-stream,
+.hljs-variable,
+.apache .hljs-sqbracket {
+  color: #EFDCBC;
+}
+
+.dos .hljs-flow,
+.diff .hljs-change,
+.python .exception,
+.python .hljs-built_in,
+.hljs-literal,
+.tex .hljs-special {
+  color: #EFEFAF;
+}
+
+.diff .hljs-chunk,
+.hljs-subst {
+  color: #8F8F8F;
+}
+
+.dos .hljs-keyword,
+.python .hljs-decorator,
+.hljs-title,
+.haskell .hljs-type,
+.diff .hljs-header,
+.ruby .hljs-class .hljs-parent,
+.apache .hljs-tag,
+.nginx .hljs-built_in,
+.tex .hljs-command,
+.hljs-prompt {
+    color: #efef8f;
+}
+
+.dos .hljs-winutils,
+.ruby .hljs-symbol,
+.ruby .hljs-symbol .hljs-string,
+.ruby .hljs-string {
+  color: #DCA3A3;
+}
+
+.diff .hljs-deletion,
+.hljs-string,
+.hljs-tag .hljs-value,
+.hljs-preprocessor,
+.hljs-pragma,
+.hljs-built_in,
+.sql .hljs-aggregate,
+.hljs-javadoc,
+.smalltalk .hljs-class,
+.smalltalk .hljs-localvars,
+.smalltalk .hljs-array,
+.css .hljs-rules .hljs-value,
+.hljs-attr_selector,
+.hljs-pseudo,
+.apache .hljs-cbracket,
+.tex .hljs-formula,
+.coffeescript .hljs-attribute {
+  color: #CC9393;
+}
+
+.hljs-shebang,
+.diff .hljs-addition,
+.hljs-comment,
+.java .hljs-annotation,
+.hljs-template_comment,
+.hljs-pi,
+.hljs-doctype {
+  color: #7F9F7F;
+}
+
+.coffeescript .javascript,
+.javascript .xml,
+.tex .hljs-formula,
+.xml .javascript,
+.xml .vbscript,
+.xml .css,
+.xml .hljs-cdata {
+  opacity: 0.5;
+}
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *uiherburvu
+
+
+ */
