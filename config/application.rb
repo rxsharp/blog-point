@@ -8,6 +8,5 @@ Bundler.require(*Rails.groups)
 
 module BlogPoint
   class Application < Rails::Application
-config.assets.precompile += %w(*.js)
   end
 end
