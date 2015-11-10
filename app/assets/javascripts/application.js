@@ -14,4 +14,5 @@
 //= require jquery_ujs
 //= require cocoon
 //= require reveal
+//= require jquery-readyselector
 //= require_tree .
