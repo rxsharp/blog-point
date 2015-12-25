@@ -1,13 +1,26 @@
 <div class="reveal">
   <div class="slides">
 <section>
-<h1>BlogPoint</h1>
-<small>A blog with a presentation style makeover</small>
-<p>Scroll of swipe right to see a list of blogs</p>
+<section>
+<h3>Welcome BlogPoint User</h3>
+<p>Scroll or swipe <strong>right</strong> to see your blogs</p>
+<p>Press <strong>down</strong> for help</p>
 <%= link_to 'New Blog', new_post_path, :class =>"btn-wb" %>
-<%= link_to 'Login', new_user_session_path, :class =>"btn-wb" %>
-<%= link_to 'Sign Up', new_user_registration_path, :class =>"btn-wb" %>
+<%= link_to'Logout', destroy_user_session_path, :method => :delete, :class =>"btn-wb" %> 
 </section>
+
+<!--HELP-->
+<section>
+  <h1>Help</h1>
+  <p>BlogPoint is a blog website in a slide-based, presentation format. 
+  All blogs do not scroll and there is a set format for the blogs</p>
+  <p>You can use the direction keys to navigate on this site. For example, clicking <strong>up</strong> 
+  will take you back to the homepage</p>
+  <p>To get started on a blog, click on the button: <%= link_to 'New Blog', new_post_path, :class =>"btn-wb" %></p>
+</section>
+
+</section>
+
 
 <section>
     <% @posts.each do |post| %>
