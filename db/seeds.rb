@@ -3,5 +3,15 @@
 #
 # Examples:
 #
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+   users = User.create([{ id: 1, email: "rickagz@gmail.com", password: "delta888" }, 
+   { id: 2, email: "blogbot@grill10.com", password: "delta888" }])
+  # The passwords are public passowrds that are changed in production
+blogbotPost = Post.create(
+  id: 1,
+  title: "What is blogpoint?",
+  body: "BlogPoint is a blog website in a slide-based, presentation format. 
+  All blogs do not scroll and there is a set format for the blogs.
+  Blogpoint aims to give you an alternative way to write/read blogs.",
+  summary: "This is a summary of BlogPoint."
+  
+  )
