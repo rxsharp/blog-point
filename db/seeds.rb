@@ -8,6 +8,7 @@
   # The passwords are public passowrds that are changed in production
 blogbotPost = Post.create(
   id: 1,
+  user_id: 2,
   title: "What is blogpoint?",
   body: "BlogPoint is a blog website in a slide-based, presentation format. 
   All blogs do not scroll and there is a set format for the blogs.
@@ -15,3 +16,15 @@ blogbotPost = Post.create(
   summary: "This is a summary of BlogPoint."
   
   )
+  
+  rickPost = Post.create(
+  id: 2,
+  user_id: 1,
+  title: "I'm Rick, the creator of BlogPoint",
+  body:
+   "Hello, I'm Rick, the creator of BlogPoint. 
+   I created this web application for potential employers to gauge my level of creating a Ruby on Rails app. 
+   While creating prototypes for new my portfolio, I try to incorporate new ideas and specific coding challenges to help strengthen my skills. 
+   BlogPoint was made to showcase the building skills I have with Ruby and all the extra stacks that go into it."   
+    
+    )

@@ -2,7 +2,9 @@
   <div class="slides">
 <section>
 <section>
-<h3>Welcome BlogPoint User</h3>
+<h3>Welcome to your user portal</h3>
+<p>Only you can see this area</p>
+<small>You are logged in as: <%= current_user.email %></small>
 <p>Scroll or swipe <strong>right</strong> to see your blogs</p>
 <p>Press <strong>down</strong> for help</p>
 <%= link_to 'New Blog', new_post_path, :class =>"btn-wb" %>
@@ -23,6 +25,10 @@
 
 
 <section>
+  <% if @posts.empty? %>
+  <strong>You currently have no posts...</strong>
+  <p>To get started with your first post, click: <%= link_to 'New Blog', new_post_path, :class =>"btn-wb" %></p>
+  <% else %>
     <% @posts.each do |post| %>
       <section>
         <h2><%= post.title %></h2>
@@ -37,7 +43,7 @@
       </section>
     <% end %>
 
-
+<% end %>
     </section>
   </div>
 </div>

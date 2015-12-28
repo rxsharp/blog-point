@@ -12,12 +12,15 @@
     <% @posts.each do |post| %>
       <section>
         <h2><%= post.title %></h2>
+        <small>Written by: <%= post.user.email %></small>
         <preview><%= post.body %></preview>
       <div class="fx-btr">
         <ul>
-        <li><%= link_to 'Show', post %></li>
+        <li><%= link_to 'Read more', post %></li>
+        <% if post.user_id == current_user.id %>
+        <span>Your post</span>
         <li><%= link_to 'Edit', edit_post_path(post) %></li>
-        <li><%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+        <% end %>
         </ul>
       </div>
       </section>
