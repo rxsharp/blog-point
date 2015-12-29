@@ -7,9 +7,7 @@
 
     /* Extra Small Devices, Phones */ 
     @media only screen and (min-width : 480px) {
-body {
-  background:red;
-}
+
     }
 
     /* Small Devices, Tablets */
@@ -48,7 +46,9 @@ body {
 
     /* Extra Small Devices, Phones */ 
     @media only screen and (max-width : 480px) {
-
+body {
+  background:red;
+}
     }
 
     /* Custom, iPhone Retina */ 
