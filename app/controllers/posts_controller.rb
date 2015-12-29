@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
-
+  before_filter :require_permission, only: :edit
   respond_to :html
 
   def index
@@ -37,6 +37,8 @@ class PostsController < ApplicationController
     respond_with(@post)
   end
 
+
+
   private
     def set_post
       @post = Post.find(params[:id])
@@ -44,5 +46,11 @@ class PostsController < ApplicationController
 
     def post_params
       params.require(:post).permit(:title, :body, :summary, :user_id)
+    end
+    
+    def require_permission
+    if current_user != Post.find(params[:id]).user
+      redirect_to root_path
+      end
     end
 end
