@@ -7,24 +7,36 @@
    { id: 2, email: "blogbot@grill10.com", password: "delta888" }])
   # The passwords are public passowrds that are changed in production
 blogbotPost = Post.create(
-  id: 1,
+  id: 2,
   user_id: 2,
   title: "What is blogpoint?",
-  body: "BlogPoint is a blog website in a slide-based, presentation format. 
+  body: "In addition, and Rick didn't actually think of this use until recently:
+        You can use BlogPoint for actual presentations. 
+        Try it out and see if BlogPoint is a medium you can get into.",
+  summary: "BlogPoint is a blogging web app in a slide-based, presentation format. 
   All blogs do not scroll and there is a set format for the blogs.
-  Blogpoint aims to give you an alternative way to write/read blogs.",
-  summary: "This is a summary of BlogPoint."
+  Blogpoint aims to give you an alternative way to write/read blogs."
   
   )
   
   rickPost = Post.create(
-  id: 2,
+  id: 1,
   user_id: 1,
   title: "I'm Rick, the creator of BlogPoint",
+  summary: 
+    "Hello, I'm Rick and I love building things like this web app. With BlogPoint, 
+    you can create your own blog posts that look like a presentation. 
+    BlogPoint presents a unique take on an old (but obviously still useful/relevant) 
+    online writing method, the blog. Also, here's another interesting use for blogpoint: 
+    actual presentations. I would love to see people use this in their work, classroom, 
+    and wherever else you can think of. 
+    BlogPoint takes care of the design and styling and let's you focus on the content.",
   body:
-   "Hello, I'm Rick, the creator of BlogPoint. 
-   I created this web application for potential employers to gauge my level of creating a Ruby on Rails app. 
-   While creating prototypes for new my portfolio, I try to incorporate new ideas and specific coding challenges to help strengthen my skills. 
-   BlogPoint was made to showcase the building skills I have with Ruby and all the extra stacks that go into it."   
+   "Why I made BlogPoint? I created this web application for potential employers 
+    to gauge my level of creating a Ruby on Rails app. 
+    While creating new prototypes for my portfolio, 
+    I try to incorporate new ideas and specific coding challenges to help strengthen my skills. 
+    BlogPoint was made to showcase the building skills I have with Ruby 
+    and all the extra stacks that go into it."   
     
     )
