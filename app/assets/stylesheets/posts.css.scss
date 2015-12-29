@@ -213,7 +213,7 @@ body {
  * LINKS
  *********************************************/
 .reveal a {
-  color: #e7ad52;
+  color: rgb(214, 247, 24);
   text-decoration: none;
   -webkit-transition: color 0.15s ease;
   -moz-transition: color 0.15s ease;
@@ -266,16 +266,16 @@ body {
  * NAVIGATION CONTROLS
  *********************************************/
 .reveal .controls div.navigate-left, .reveal .controls div.navigate-left.enabled {
-  border-right-color: #e7ad52; }
+  border-right-color: rgba(55, 107, 99, 1); }
 
 .reveal .controls div.navigate-right, .reveal .controls div.navigate-right.enabled {
-  border-left-color: #e7ad52; }
+  border-left-color: rgba(55, 107, 99, 1); }
 
 .reveal .controls div.navigate-up, .reveal .controls div.navigate-up.enabled {
-  border-bottom-color: #e7ad52; }
+  border-bottom-color: rgba(55, 107, 99, 1); }
 
 .reveal .controls div.navigate-down, .reveal .controls div.navigate-down.enabled {
-  border-top-color: #e7ad52; }
+  border-top-color: rgba(55, 107, 99, 1); }
 
 .reveal .controls div.navigate-left.enabled:hover {
   border-right-color: #f3d7ac; }
