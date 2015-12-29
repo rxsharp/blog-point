@@ -2,19 +2,18 @@
 <div class="slides">
 <section>
   <p id="notice"><%= notice %></p>
-  Blog title: <strong><%= @post.title %></strong>
+  <h1><%= @post.title %></h1>
 </section>
-<!--START OF NESTED SECTIONS--><section>
+<% if !@post.summary.nil? %>
 <section>
   <p>
-  <strong>Summary:</strong>
   <%= @post.summary %>
 </p>
 </section>
+<% end %>
 
 <section>
 <p>
-  <strong>Body:</strong>
   <%= @post.body %>
 </p>
 
@@ -24,7 +23,6 @@
         <% end %>
 </section>
 
-<!--END OF NESTED SECTIONS--></section>
 </div>
 </div>
 
