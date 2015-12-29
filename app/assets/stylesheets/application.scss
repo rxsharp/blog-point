@@ -13,14 +13,9 @@
  *= require_tree .
  *= require_self
  */
-
-body {
-  background: #2FA29C;
-  
-}
-
-.reveal .controls {
-  bottom:0px;
-  left: 50%;
-      transform: translate(-50%, -50%) scale(1.3);
-}
+@import "landing";
+@import "new-post";
+@import "zenburn";
+@import "posts";
+@import "mediaQueries";
+@import "master";

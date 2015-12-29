@@ -1,0 +1,13 @@
+// The purpose of this file is to override any other styles. 
+// This can be for testing purposes or trying out some new styles before implementing them permanently.
+body {
+  background: #2FA29C;
+  
+}
+
+
+.reveal .controls {
+  bottom:0px;
+  left: 50%;
+      transform: translate(-50%, -50%) scale(1.3);
+}
