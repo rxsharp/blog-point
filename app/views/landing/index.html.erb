@@ -4,8 +4,6 @@
 <h1>BlogPoint</h1>
 <small>A blog with a presentation style makeover</small>
 <p>Scroll or swipe right to see a list of blogs</p>
-<%= link_to 'Login', new_user_session_path, :class =>"btn-wb" %>
-<%= link_to 'Sign Up', new_user_registration_path, :class =>"btn-wb" %>
 </section>
 
 <section>
@@ -17,8 +15,7 @@
       <div class="fx-btr">
         <ul>
         <li><%= link_to 'Read more', post %></li>
-        <% if user_signed_in? %>
-        <% post.user_id == current_user.id %>
+        <% if user_signed_in? && post.user_id == current_user.id %>
         <span>Your post</span>
         <li><%= link_to 'Edit', edit_post_path(post) %></li>
         <% end %>

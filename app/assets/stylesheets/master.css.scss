@@ -1,5 +1,57 @@
 // The purpose of this file is to override any other styles. 
 // This can be for testing purposes or trying out some new styles before implementing them permanently.
+
+.home {
+  z-index:999;
+  text-decoration:none;
+  color: #eee;
+    font-family: 'Montserrat', Impact, sans-serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    border: 2px solid white;
+    opacity: .5;
+    margin-left: 5px;
+    margin-top: 5px;
+    position: fixed;
+    top: 2px;
+    left: 2px;
+}
+
+.menuLinks {
+  z-index:999;
+  position: fixed;
+  right: 2px;
+}
+
+.menuLinks a {
+  color: rgb(214, 247, 24);
+  text-decoration: none;
+  -webkit-transition: color 0.15s ease;
+  -moz-transition: color 0.15s ease;
+  transition: color 0.15s ease; 
+  display: inline-block;
+    border: 2px solid white;
+    padding: 12px 17px;
+    width: 150px;
+    text-align: center;
+ 
+
+}
+
+.menuLinks a:hover {
+  // color: #f3d7ac;
+  text-shadow: none;
+  // border: none; 
+  display: inline-block;
+    border: 1px solid white;
+    color: white;
+    padding: 12px 17px;
+    width: 150px;
+    text-align: center;
+  
+}
+
+
 body {
   background: #2FA29C;
   
