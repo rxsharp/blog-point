@@ -1,5 +1,10 @@
 // The purpose of this file is to override any other styles. 
 // This can be for testing purposes or trying out some new styles before implementing them permanently.
+.user {
+  margin-top: 100px;
+  position:relative;
+  left:15px;
+}
 
 .home {
   z-index:999;
@@ -18,9 +23,10 @@
 }
 
 .menuLinks {
-  z-index:999;
+  z-index:998;
   position: fixed;
   right: 2px;
+  top: 0px;
 }
 
 .menuLinks a {
@@ -30,10 +36,12 @@
   -moz-transition: color 0.15s ease;
   transition: color 0.15s ease; 
   display: inline-block;
-    border: 2px solid white;
-    padding: 12px 17px;
-    width: 150px;
-    text-align: center;
+  border: 2px solid white;
+  padding: 12px 17px;
+  width: 150px;
+  text-align: center;
+  position: relative;
+  float: right;
  
 
 }
