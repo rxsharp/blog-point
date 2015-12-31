@@ -15,7 +15,11 @@ blogbotPost = Post.create(
         Try it out and see if BlogPoint is a medium you can get into.",
   summary: "BlogPoint is a blogging web app in a slide-based, presentation format. 
   All blogs do not scroll and there is a set format for the blogs.
-  Blogpoint aims to give you an alternative way to write/read blogs."
+  Blogpoint aims to give you an alternative way to write/read blogs.",
+  conclusion:
+  "Thanks for viewing this presentation. This is the conclusion slide. 
+  BlogPoint gives you optional input sections for conclusion and summary slides.
+  This is another added benefit to help you organize your posts/presentations. Ciao."
   
   )
   
@@ -37,6 +41,9 @@ blogbotPost = Post.create(
     While creating new prototypes for my portfolio, 
     I try to incorporate new ideas and specific coding challenges to help strengthen my skills. 
     BlogPoint was made to showcase the building skills I have with Ruby 
-    and all the extra stacks that go into it."   
+    and all the extra stacks that go into it." ,
+  conclusion:
+    "Thanks for your interest in Blogpoint and 
+    we hope you enjoy the BlogPoint blogging/viewing/presenting/sharing experience."
     
     )

@@ -1,5 +1,51 @@
 // The purpose of this file is to override any other styles. 
 // This can be for testing purposes or trying out some new styles before implementing them permanently.
+.highlight {
+    color: #eee;
+    font-family: 'Montserrat', Impact, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    opacity: .5
+}
+
+.bottomMenuLinks {
+  position: fixed;
+  z-index:998;
+  bottom: 6px;
+  left: 6px;
+}
+
+.bottomMenuLinks a {
+  color: rgb(214, 247, 24);
+  text-decoration: none;
+  -webkit-transition: color 0.15s ease;
+  -moz-transition: color 0.15s ease;
+  transition: color 0.15s ease; 
+  display: inline-block;
+  border: 2px solid white;
+  padding: 12px 17px;
+  width: 150px;
+  text-align: center;
+  position: relative;
+  float: right;
+ 
+
+}
+
+.bottomMenuLinks a:hover {
+  // color: #f3d7ac;
+  text-shadow: none;
+  // border: none; 
+  display: inline-block;
+    border: 1px solid white;
+    color: white;
+    padding: 12px 17px;
+    width: 150px;
+    text-align: center;
+  
+}
+
+
 .user {
   margin-top: 100px;
   position:relative;
